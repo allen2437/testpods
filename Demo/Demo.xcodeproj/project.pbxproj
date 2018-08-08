@@ -13,6 +13,7 @@
 		765D55A8211A9056003A6050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765D55A7211A9056003A6050 /* Assets.xcassets */; };
 		765D55AB211A9056003A6050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 765D55A9211A9056003A6050 /* LaunchScreen.storyboard */; };
 		765D55AE211A9056003A6050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 765D55AD211A9056003A6050 /* main.m */; };
+		765D55B6211A9085003A6050 /* DemoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 765D55B5211A9085003A6050 /* DemoTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		765D55AA211A9056003A6050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		765D55AC211A9056003A6050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		765D55AD211A9056003A6050 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		765D55B4211A9085003A6050 /* DemoTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoTools.h; sourceTree = "<group>"; };
+		765D55B5211A9085003A6050 /* DemoTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,8 @@
 		765D5592211A9054003A6050 = {
 			isa = PBXGroup;
 			children = (
+				765D55B4211A9085003A6050 /* DemoTools.h */,
+				765D55B5211A9085003A6050 /* DemoTools.m */,
 				765D559D211A9054003A6050 /* Demo */,
 				765D559C211A9054003A6050 /* Products */,
 			);
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765D55B6211A9085003A6050 /* DemoTools.m in Sources */,
 				765D55A3211A9054003A6050 /* ViewController.m in Sources */,
 				765D55AE211A9056003A6050 /* main.m in Sources */,
 				765D55A0211A9054003A6050 /* AppDelegate.m in Sources */,
@@ -283,14 +289,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.elonjew.com.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,14 +308,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.elonjew.com.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

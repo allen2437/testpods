@@ -10,4 +10,7 @@
 
 @implementation DemoTools
 
+- (void)testDemo {
+    NSLog(@"Demo测试");
+}
 @end

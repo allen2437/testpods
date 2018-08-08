@@ -10,4 +10,6 @@
 
 @interface DemoTools : NSObject
 
+- (void)testDemo;
+
 @end
